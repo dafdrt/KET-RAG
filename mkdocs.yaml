@@ -25,6 +25,9 @@ nav:
       - Welcome: index.md
       - Getting Started: get_started.md
       - Development Guide: developing.md
+      - Architecture: architecture.md
+      - Architecture (中文): 架构文档.md
+      - Quick Reference: architecture-quick-reference.md
   - Indexing:
       - Overview: "index/overview.md"
       - Architecture: "index/architecture.md"
