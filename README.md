@@ -33,6 +33,10 @@ KET-RAG balances retrieval quality and efficiency with a multi-granular indexing
 
 During retrieval, KET-RAG integrates information from both entity and keyword channels, enabling efficient and high-quality LLM-based answer generation. Experiments show that KET-RAG significantly reduces indexing costs while improving retrieval and generation quality, making it a practical solution for large-scale RAG applications.
 
+📖 **For detailed architecture information, see:**
+- [Architecture Documentation (English)](docs/architecture.md)
+- [架构文档 (中文)](docs/架构文档.md)
+
 ## Prerequisites
 
 Ensure you have Python **>=3.10** installed.

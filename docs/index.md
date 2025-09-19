@@ -1,8 +1,9 @@
-# Welcome to GraphRAG
+# Welcome to KET-RAG
 
+👉 [KET-RAG ArXiv Paper](https://arxiv.org/abs/2502.09304) <br/>
+👉 [Original GraphRAG Project](https://github.com/microsoft/graphrag) <br/>
 👉 [Microsoft Research Blog Post](https://www.microsoft.com/en-us/research/blog/graphrag-unlocking-llm-discovery-on-narrative-private-data/) <br/>
 👉 [GraphRAG Accelerator](https://github.com/Azure-Samples/graphrag-accelerator) <br/>
-👉 [GraphRAG Arxiv](https://arxiv.org/pdf/2404.16130)
 
 <p align="center">
 <img src="img/GraphRag-Figure1.jpg" alt="Figure 1: LLM-generated knowledge graph built from a private dataset using GPT-4 Turbo." width="450" align="center" />
@@ -11,10 +12,37 @@
 Figure 1: An LLM-generated knowledge graph built using GPT-4 Turbo.
 </p>
 
-GraphRAG is a structured, hierarchical approach to Retrieval Augmented Generation (RAG), as opposed to naive semantic-search
+**KET-RAG (Knowledge-Enhanced Text Retrieval Augmented Generation)** is a powerful and flexible framework for retrieval-augmented generation (RAG) enhanced with knowledge graphs. This project builds upon Microsoft's GraphRAG and introduces innovative dual-indexing strategies to balance retrieval quality and efficiency.
+
+## KET-RAG Innovation 🚀
+
+KET-RAG introduces two key components that significantly improve upon traditional GraphRAG:
+
+### 1. SkeletonRAG (知识图谱骨架)
+- **Intelligent Selection**: Uses PageRank algorithm to identify the most important text chunks
+- **Structured Extraction**: Leverages LLMs to extract high-quality structured knowledge
+- **Efficient Processing**: Focuses computational resources on the most valuable content
+
+### 2. KeywordRAG (关键词索引)  
+- **Lightweight Mapping**: Creates efficient keyword-to-text-chunk relationships
+- **Cost-Effective**: Mimics knowledge graph relationships with minimal computational cost
+- **Broad Coverage**: Ensures comprehensive coverage of document content
+
+During retrieval, KET-RAG integrates information from both entity and keyword channels, enabling efficient and high-quality LLM-based answer generation. Experiments show that KET-RAG significantly reduces indexing costs while improving retrieval and generation quality.
+
+## Architecture Overview 📋
+
+📖 **For detailed architecture information, see:**
+- [Architecture Documentation (English)](architecture.md)
+- [架构文档 (中文)](架构文档.md)
+- [Quick Reference](architecture-quick-reference.md)
+
+## GraphRAG Foundation
+
+KET-RAG is built upon GraphRAG, a structured, hierarchical approach to Retrieval Augmented Generation (RAG), as opposed to naive semantic-search
 approaches using plain text snippets. The GraphRAG process involves extracting a knowledge graph out of raw text, building a community hierarchy, generating summaries for these communities, and then leveraging these structures when perform RAG-based tasks.
 
-To learn more about GraphRAG and how it can be used to enhance your LLMs ability to reason about your private data, please visit the [Microsoft Research Blog Post](https://www.microsoft.com/en-us/research/blog/graphrag-unlocking-llm-discovery-on-narrative-private-data/).
+To learn more about the foundational GraphRAG system, please visit the [Microsoft Research Blog Post](https://www.microsoft.com/en-us/research/blog/graphrag-unlocking-llm-discovery-on-narrative-private-data/).
 
 ## Solution Accelerator 🚀
 
